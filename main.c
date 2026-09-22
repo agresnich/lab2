@@ -1,4 +1,9 @@
+@echo off
+chcp 866 >nul
+main.exe
+pause
 #include <stdio.h>
+#include <stdlib.h>
 #include <Windows.h>
 
 #define INV_SIZE 10
@@ -125,7 +130,7 @@ void compact_inventory(int inv[INV_SIZE]) {
 }
 
 int main(void) {
-    /* Один раз настраиваем консоль на UTF-8 — и всё */
+    /* Один раз настраиваем консоль на UTF-8 */
     SetConsoleOutputCP(65001);
     SetConsoleCP(65001);
 
